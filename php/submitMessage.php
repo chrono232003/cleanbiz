@@ -6,13 +6,13 @@ $subject = $_POST["subject"];
 $message = $_POST["message"];
 
 $to_email = "chrono232003@yahoo.com";
-$subject = "Web Design Inquiry from Cleaning Web Services.";
+$subject = "Cleaning Inquiry.";
 $message = "Name: " . $name . " Email: " . $email . " Subject: " . $subject . " Message: " . $message;
-$headers = "From: noreply@cleaningwebservices.com";
+$headers = "From: noreply@diligentcleaners.com";
 
 mail($to_email, $subject, $message, $headers);
 
-header("Location: https://cleaningwebservices.com?message=sent"); /* Redirect browser */
+header("Location: https://diligentcleaners.com?message=sent"); /* Redirect browser */
 exit();
 
 ?>
